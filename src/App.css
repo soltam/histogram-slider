@@ -24,6 +24,13 @@
   color: white;
 }
 
+.BarChart {
+  height: 60px;
+  width: 600px;
+  padding-left: 300px;
+  padding-top: 200px;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +42,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.BarChart canvas {
+  border: 1px solid black;
+}
+
+.BarChart {
+  margin-left:100px;
 }

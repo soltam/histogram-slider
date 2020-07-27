@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// import Histoslider from  'histoslider';
+import HistoSlider from './HistoSlider';
+
+let prices: any[] = [];
+for (let i = 0; i < 500; i++) {
+  prices.push(Math.floor(Math.random() * 80) + 1);
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="BarChart">
+      <HistoSlider data={prices} height={50} width={600}/>
+      </div>
     </div>
   );
 }
